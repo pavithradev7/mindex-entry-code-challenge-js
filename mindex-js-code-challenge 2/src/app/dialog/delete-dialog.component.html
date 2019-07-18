@@ -1,0 +1,17 @@
+<h3>Delete Employee</h3>
+<div>Permanently delete employee {{ data.firstName }} {{ data.lastName }}?</div>
+<div class="second-alert">This cannot be undone</div>
+
+<div class="button-container">
+  <button
+    mat-stroked-button
+    color="primary"
+    [mat-dialog-close]="data"
+    cdkFocusInitial
+  >
+    OK
+  </button>
+  <button mat-stroked-button color="primary" (click)="onNoClick()">
+    Cancel
+  </button>
+</div>

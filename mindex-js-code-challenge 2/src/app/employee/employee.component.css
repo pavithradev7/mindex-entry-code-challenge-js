@@ -1,0 +1,11 @@
+.employee-reports {
+  margin-left: 10px;
+}
+
+.report-name {
+  width: 250px;
+  display: inline-block;
+}
+.reports-content {
+  margin-left: 10px;
+}

@@ -1,0 +1,26 @@
+<mat-form-field>
+  <input matInput [(ngModel)]="data.firstName" placeholder="First Name" />
+</mat-form-field>
+<mat-form-field>
+  <input matInput [(ngModel)]="data.lastName" placeholder="Last Name" />
+</mat-form-field>
+<mat-form-field>
+  <input matInput [(ngModel)]="data.position" placeholder="Position" />
+</mat-form-field>
+<mat-form-field>
+  <input matInput [(ngModel)]="data.compensation" placeholder="Compensation" />
+</mat-form-field>
+
+<div class="button-container">
+  <button
+    mat-stroked-button
+    color="primary"
+    [mat-dialog-close]="data"
+    cdkFocusInitial
+  >
+    Save
+  </button>
+  <button mat-stroked-button color="primary" (click)="onNoClick()">
+    Cancel
+  </button>
+</div>
