@@ -1,3 +1,13 @@
+.employee-list {
+  margin: 0 auto;
+}
+.employee-row {
+  border: 1px solid grey;
+  border-radius: 4px;
+  box-shadow: 2px 5px 4px grey;
+  margin-bottom: 20px;
+  width: 600px;
+}
 .employee {
   width: 100%;
 }
