@@ -6,12 +6,12 @@
     <mat-card-subtitle>
       <span>Employee ID: {{ employee.id }}</span>
       <span class="employee-reports"
-        >Reports: {{ getReportingEmployees() }}</span
+        >Direct Reports: {{ getReportingEmployees() }}</span
       >
     </mat-card-subtitle>
   </mat-card-header>
   <mat-card-content class="reports-content">
-    <div>Direct Reports:</div>
+    <div>Reports:</div>
     <div *ngFor="let directEmp of getDirectReports()">
       <span class="report-name"
         >{{ directEmp.firstName }} {{ directEmp.lastName }},
